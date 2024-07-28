@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:350px;
+height:100px;
+border:1px solid black;
+
+/* Firefox */
+display:-moz-box;
+-moz-box-direction:reverse;
+
+/* Safari, Opera, and Chrome */
+display:-webkit-box;
+-webkit-box-direction:reverse;
+
+/* W3C */
+display:box;
+box-direction:reverse;
+}
+</style>
+</head>
+<body>
+
+<div>
+<p>段落 1。</p>
+<p>段落 2。</p>
+<p>段落 3。</p>
+</div>
+
+<p><b>注释：</b>IE 不支持 box-direction 属性。</p>
+
+</body>
+</html>

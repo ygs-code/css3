@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>E::before_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+/*在css里面添加文字*/
+p{position:relative;color:#f00;font-size:14px;font-size:0\9;*font-size:14px;}
+p:before{position:absolute;background:#fff;color:#000;content:"如果你的能看到这段文字，说明你的浏览器只支持E:before";font-size:14px;}
+p::before{position:absolute;background:#fff;color:#000;content:"如果你的能看到这段文字，说明你的浏览器支持E:before和E::before";font-size:14px;}
+</style>
+</head>
+<body>
+<p>Sorry, 你的浏览器不支持E:before和E::before</p>
+</body>
+</html>
+			

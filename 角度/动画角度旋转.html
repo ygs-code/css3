@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+    #div1{
+		 width:300px;
+		 height:100px;
+		 background:red;
+		 position:absolute;
+		 top:250px;
+		 left:250px;
+		 height:100px;
+  	overflow:hidden;
+ 	 box-shadow:0 0 10px rgba(204,102,0,.8);
+	/*设置动画，第一个参数是动画名称，第二个参数是动画时间*/
+ 	-moz-animation:ball 3s linear forwards ;
+	-webkit-animation:ball 3s linear  forwards;
+	-o-animation:ball 3s linear  forwards;
+	-ms-animation:ball 3s linear  forwards;
+	animation:ball 3s linear forwards ;
+	/*text-shadow 可以设置3d字体效果*/
+	text-shadow:1px 1px 0 rgba(0,0,255,.8),2px 2px 3px rgba(0,0,255,.3),5px 5px 5px rgba(0,255,255,.3),15px 15px 15px rgba(100,255,100,.5);
+ 		}
+ 
+ @-webkit-keyframes ball{
+   	0%{-webkit-transform:  translate(0px,0px) skew(0deg) rotate(0deg); }
+    100%{-webkit-transform:translate(0px,-150px) skew(30deg)  rotate(30deg);}  
+ 
+   }
+@-moz-keyframes ball{
+	 
+    0%{-moz-transform:  translate(0px,0px) skew(0deg) rotate(0deg);} 
+    100%{-moz-transform:translate(0px,-150px) skew(30deg)  rotate(30deg);} 
+ 
+ }
+@-o-keyframes ball{
+ 	 0%{-o-transform:  translate(0px,0px) skew(0deg) rotate(0deg);}
+	 100%{-o-transform:translate(0px,-150px) skew(30deg)  rotate(30deg);} 
+ 
+ }
+@-ms-keyframes ball{
+ 	  0%{-ms-transform:  translate(0px,0px) skew(0deg) rotate(0deg);}
+	  100%{-ms-transform:  translate(0px,-150px) skew(30deg)  rotate(30deg);} 
+ 
+ }
+@keyframes {
+	0%{transform:  translate(0px,0px) skew(0deg) rotate(0deg);}
+	100%{transform: translate(0px,-150px) skew(30deg)  rotate(30deg);} 
+	 
+ 	}	
+	
+</style>
+</head>
+ <body>
+     <div id="div1">
+           text-shadow 应该是文本样式设置
+     </div>
+</body>
+</html>

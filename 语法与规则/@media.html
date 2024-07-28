@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>@media_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+.test,.test2{display:none;}
+/* 本条为CSS2部分，IE8及以下只支持本条 */
+@media screen{
+	body{color:#f00;}
+}
+/* 下列为CSS3部分 */
+@media screen and (min-width:960px){
+	body{background:#999;}
+}
+@media screen and (device-width:1024px){
+	.test{display:block;}
+}
+@media screen and (width:1024px){
+	.test2{display:block;}
+}
+</style>
+</head>
+<body>
+<div>Media Queries媒体查询</div>
+<div class="test">如果你的显示器水平分辨率为1024px的话将能看到本条规则的效果（取决于输出设备屏幕分辨率的大小，不随包括浏览器在内的窗体大小而改变）</div>
+<div class="test2">如果视口宽度为1024px的话将能看到本条规则的效果（随包括浏览器在内的窗体大小而改变）</div>
+</body>
+</html>
+			

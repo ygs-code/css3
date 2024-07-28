@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    /*利用table实现图片垂直居中*/
+    /*父亲盒子必须设置宽高才能实现子盒子剧中*/
+    body{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: table;
+        /*border: green solid 1px;*/
+    }
+
+    .child-box {
+        display: table-cell;
+        vertical-align: middle;
+
+    }
+
+    .child-box div {
+        width: 100px;
+        height: 100px;
+        background: gold;
+        display: inline-block;
+    }
+</style>
+<body>
+<!--<div class="parent-box">-->
+    <div class="child-box">
+        <div></div>
+    </div>
+
+    <!--<span style="display: table-cell; vertical-align: middle; "><img alt="" src="https://www.baidu.com/img/baidu_jgylogo3.gif" style="display: inline-block;" /></span>-->
+<!--</div>-->
+
+
+</body>
+</html>

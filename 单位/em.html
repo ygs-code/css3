@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>em_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+/*相对长度单位。相对于当前对象内文本的字体尺寸。 
+em 相对于父元素的尺寸
+如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。 
+*/
+body{font-size:14px;}
+h1{font-size:16px;}
+li{
+	font-size:20px;
+	}
+.size1 p{font-size:1em;  }
+.size2 p{font-size:2em;}
+.size3 p{font-size:3em;}
+</style>
+</head>
+<body>
+<h1>假定当前默认字体尺寸是14px，n em即为14px字体尺寸的n倍：</h1>
+<ul>
+	<li class="size1">
+		<strong>1em</strong>:
+		<p>1em大小的文字</p>
+	</li>
+	<li class="size2">
+		<strong>2em</strong>:
+		<p>2em大小的文字</p>
+	</li>
+	<li class="size3">
+		<strong>3em</strong>:
+		<p>3em大小的文字</p>
+	</li>
+</ul>
+</body>
+</html>
+			

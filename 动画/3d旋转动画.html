@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+div {
+    margin: 0 auto;
+    width: 540px;
+    height: 405px;
+    background:url(moto1.gif) center no-repeat;
+    /* 定义3D空间 */
+	 -webkit-transform-style: preserve-3d; 
+   /* 设计沿x轴旋转、20秒线性过渡动画、无限次播放 */
+	/*-webkit-animation-name: x-spin;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;*/
+	
+	/*可以这样简写*/
+	 -moz-animation: x-spin 20s  infinite linear; 
+	/*这几个参数可以不按照顺序写*/
+	 -webkit-animation:infinite linear 20s x-spin; 
+	 -o-animation:x-spin 20s  infinite linear;
+	-ms-animation:x-spin 20s  infinite linear; 
+    animation:x-spin 20s  infinite linear; 
+	
+}
+/* 调用动画 */
+ @-webkit-keyframes  x-spin{
+	0%{-webkit-transform:rotateX(0deg);}
+	50%{-webkit-transform:rotateX(180deg);}
+ 	100%{-webkit-transform:rotateX(360deg);}
+}
+@-moz-keyframes  x-spin{
+	0%{-moz-transform:rotateX(0deg);}
+ 	50%{-moz-transform:rotateX(180deg);}
+ 	100%{-moz-transform:rotateX(360deg);}
+}
+@-o-keyframes  x-spin{
+	0%{-o-transform:rotateX(0deg);}
+ 	50%{-o-transform:rotateX(180deg);}
+ 	100%{-o-transform:rotateX(360deg);}
+}
+@-ms-keyframes x-spin{
+	0%{-ms-transform:rotateX(0deg);}
+ 	50%{-ms-transform:rotateX(180deg);}
+ 	100%{-ms-transform:rotateX(360deg);}
+}
+@keyframes x-spin{
+	0%{transform:rotateX(0deg);}
+ 	50%{transform:rotateX(180deg);}
+ 	100%{transform:rotateX(360deg);}
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div></div>
+</body>
+</html>

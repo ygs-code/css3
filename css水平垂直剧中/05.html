@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    /*父亲盒子必须设置宽高才能实现子盒子剧中*/
+    .parent-box{
+        width: 260px;
+        height: 230px;
+        border: 3px solid #555;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .child-box{
+        width: 100px;
+        height: 100px;
+        background: red;
+        vertical-align: middle;
+        margin: 0 auto ;
+    }
+</style>
+<body>
+<div class="parent-box">
+    <div class="child-box"></div>
+</div>
+
+
+
+</body>
+</html>
